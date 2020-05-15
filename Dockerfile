@@ -10,8 +10,6 @@ ENV OPENVPN_SERVER nl.secretvpn.net
 
 VOLUME ["/etc/openvpn"]
 
-EXPOSE 1194/udp
-
 CMD ["ovpn_run.sh"]
 
 ADD ./bin /usr/local/bin
