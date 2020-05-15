@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ovpn-client:
+    image: romantix74/openvpn_client
+    container_name: ovpn_client
+    privileged: yes
+    environment:
+      - OPENVPN_SERVER=ca02.secretvpn.net
+    volumes:
+      - ./configs:/etc/openvpn/
