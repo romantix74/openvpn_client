@@ -9,8 +9,6 @@ ENV OPENVPN /etc/openvpn
 ENV OPENVPN_SERVER nl.secretvpn.net
 ENV OPENVPN_PORT 443
 
-COPY ./configs /etc/openvpn/
-
 CMD ["ovpn_run.sh"]
 
 ADD ./bin /usr/local/bin

@@ -12,4 +12,4 @@ set -e
 cd $OPENVPN
 
 echo "Running 'openvpn'"
-exec openvpn --config /etc/openvpn/openvpn.conf --remote $OPENVPN_SERVER 443
+exec openvpn --config /etc/openvpn/openvpn.conf --remote $OPENVPN_SERVER $OPENVPN_PORT
