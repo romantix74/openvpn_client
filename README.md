@@ -6,6 +6,7 @@ Thereis simple usage:
     docker run -v /etc/openvpn:/etc/openvpn --name ovpn_client --privileged --rm --network=test_vpn --ip=172.28.0.2 -e OPENVPN_SERVER=ru01.secretvpn.net romantix74/openvpn_client
 
 On main system you should route you traffic. For example for ifconfig.me
+
     ip route add 216.239.0.0/16 via 172.28.0.2
     curl ifconfig.me
 
