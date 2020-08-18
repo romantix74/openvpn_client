@@ -9,6 +9,9 @@ fi
 
 set -e
 
+# nat
+iptables -t nat -A POSTROUTING -j MASQUERADE
+
 cd $OPENVPN
 
 echo "Running 'openvpn'"

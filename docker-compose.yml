@@ -7,5 +7,7 @@ services:
     environment:
       - OPENVPN_SERVER=ru.secretvpn.net
       - OPENVPN_PORT=443
+      - OPENVPN_PROTOCOL=UDP
+    privileged: true
     volumes:
       - /etc/openvpn/:/etc/openvpn/
