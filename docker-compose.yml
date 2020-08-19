@@ -3,11 +3,10 @@ services:
   ovpn-client:
     image: romantix74/openvpn_client
 #    container_name: ovpn_client
-#    privileged: yes
     environment:
       - OPENVPN_SERVER=ru.secretvpn.net
       - OPENVPN_PORT=443
-      - OPENVPN_PROTOCOL=UDP
+      - OPENVPN_PROTO=UDP
     privileged: true
     volumes:
       - /etc/openvpn/:/etc/openvpn/

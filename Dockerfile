@@ -8,7 +8,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/reposi
 ENV OPENVPN /etc/openvpn
 ENV OPENVPN_SERVER nl.secretvpn.net
 ENV OPENVPN_PORT 443
-ENV OPENVPN_PROTOCOL TCP
+ENV OPENVPN_PROTO UDP
 
 CMD ["ovpn_run.sh"]
 
