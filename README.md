@@ -1,6 +1,6 @@
 # openvpn client
 
-Thereis simple usage:
+There is simple usage:
 
     docker network create --driver=bridge --subnet=172.28.0.0/24 test_vpn
     docker run -v /etc/openvpn:/etc/openvpn --name ovpn_client --privileged --rm --network=test_vpn --ip=172.28.0.2 -e OPENVPN_SERVER=ru01.secretvpn.net romantix74/openvpn_client
@@ -14,6 +14,8 @@ Available on [Docker Hub](https://hub.docker.com/r/romantix74/openvpn_client).
 
 ## Run from docker-compose [github](https://github.com/romantix74/openvpn_client/blob/master/docker-compose.yml)
 
-Insert remote openvpn server using env variable:
+Env variables:
     $OPENVPN_SERVER=ca02.secretvpn.net
+    $OPENVPN_PORT=443
+    $OPENVPN_PROTO=udp
 
