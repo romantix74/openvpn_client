@@ -9,4 +9,4 @@ services:
       - OPENVPN_PROTO=udp
     privileged: true
     volumes:
-      - /etc/openvpn/:/etc/openvpn/
+      - ./configs/:/etc/openvpn/

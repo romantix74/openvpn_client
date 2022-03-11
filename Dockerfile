@@ -10,6 +10,7 @@ ENV OPENVPN_SERVER nl.secretvpn.net
 ENV OPENVPN_PORT 443
 ENV OPENVPN_PROTO udp
 
+COPY ./bin/ovpn_run.sh /ovpn_run.sh
 CMD ["ovpn_run.sh"]
 
 ADD ./bin /usr/local/bin
